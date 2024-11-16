@@ -22,3 +22,13 @@ class Operation:
         self.amount = amount
         self.label = label
         self.type = type
+
+    def __str__(self):
+        return (
+            f"Operation(id={self.operation_id}, "
+            f"title={self.title}, "
+            f"status={self.status}, "
+            f"amount={self.amount}, "
+            f"label={self.label}, "
+            f"datetime={self.datetime})"
+        )
